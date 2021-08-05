@@ -1,7 +1,10 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 
-export const Card = ({user}) => (
+export const Card = ({user}) => {
+  // console.log('info USER',user)
+
+  return (
   <div className="card">
     <img src={user.avatar_url} alt={user.login} className="card-img-top"/>
     <div className="card-body">
@@ -10,4 +13,4 @@ export const Card = ({user}) => (
 
     </div>
   </div>
-)
+)}
